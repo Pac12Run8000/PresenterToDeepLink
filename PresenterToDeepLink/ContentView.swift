@@ -23,11 +23,7 @@ struct ContentView: View {
                 }
                 .tag(Tab.card)
         }
-//        .onOpenURL { url in
-//            if url.lastPathComponent == "card" {
-//                self.selection = 2
-//            }
-//        }
+
         .onOpenURL { url in
             print("Received URL: \(url)")
             switch url.host {
