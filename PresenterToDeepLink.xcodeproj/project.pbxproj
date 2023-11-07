@@ -14,7 +14,6 @@
 		09A284642AFAA5C900E58313 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A284632AFAA5C900E58313 /* CardView.swift */; };
 		09A284662AFAA96A00E58313 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A284652AFAA96A00E58313 /* HomeView.swift */; };
 		09A284682AFAA99F00E58313 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A284672AFAA99F00E58313 /* ProfileView.swift */; };
-		09A2846B2AFAB61200E58313 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2846A2AFAB61200E58313 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		09A284652AFAA96A00E58313 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		09A284672AFAA99F00E58313 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		09A284692AFAADCA00E58313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		09A2846A2AFAB61200E58313 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 				09A284632AFAA5C900E58313 /* CardView.swift */,
 				09A284652AFAA96A00E58313 /* HomeView.swift */,
 				09A284672AFAA99F00E58313 /* ProfileView.swift */,
-				09A2846A2AFAB61200E58313 /* Enums.swift */,
 				09A284592AFAA56600E58313 /* Assets.xcassets */,
 				09A2845B2AFAA56600E58313 /* Preview Content */,
 			);
@@ -155,7 +152,6 @@
 				09A284662AFAA96A00E58313 /* HomeView.swift in Sources */,
 				09A284682AFAA99F00E58313 /* ProfileView.swift in Sources */,
 				09A284642AFAA5C900E58313 /* CardView.swift in Sources */,
-				09A2846B2AFAB61200E58313 /* Enums.swift in Sources */,
 				09A284562AFAA56300E58313 /* PresenterToDeepLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
