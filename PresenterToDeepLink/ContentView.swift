@@ -1,36 +1,51 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0
-    @State private var deepLinkActive = false
+    @Binding var selectedTab: Tab
+    @State private var deepLinkDestination: DeepLinkDestination?
     var body: some View {
-        TabView {
+        TabView(selection: $selectedTab) {
             HomeView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-                .tag(0)
+                .tag(Tab.home)
             
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")
                 }
-                .tag(1)
+                .tag(Tab.profile)
             
             CardView()
                 .tabItem {
                     Label("Card", systemImage: "creditcard")
                 }
-                .tag(2)
+                .tag(Tab.card)
         }
+//        .onOpenURL { url in
+//            if url.lastPathComponent == "card" {
+//                self.selection = 2
+//            }
+//        }
         .onOpenURL { url in
-            if url.lastPathComponent == "card" {
-                self.selection = 2
+            print("Received URL: \(url)")
+            switch url.host {
+            case "card":
+                print("Navigating to CardView")
+                self.selectedTab = .card
+            default:
+                break
             }
         }
     }
+    enum Tab {
+        case home
+        case profile
+        case card
+    }
 }
 
-#Preview {
-    ContentView()
-}
+
+
+
